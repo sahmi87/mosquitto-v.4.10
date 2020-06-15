@@ -68,7 +68,7 @@ RUN apk --no-cache add --virtual buildDeps git cmake build-base openssl-dev c-ar
     ln -sf /usr/lib/libmosquitto.so.1 /usr/lib/libmosquitto.so && \
     install -s -m755 src/mosquitto /usr/sbin/mosquitto && \
     install -s -m755 src/mosquitto_passwd /usr/bin/mosquitto_passwd && \
-    git clone https://github.com/vankxr/mosquitto-auth-plug && \
+    git clone https://github.com/sahmi87/mosquitto-auth-plug && \
     cd mosquitto-auth-plug && \
     cp config.mk.in config.mk && \
     sed -i "s/BACKEND_CDB ?= no/BACKEND_CDB ?= no/" config.mk && \
